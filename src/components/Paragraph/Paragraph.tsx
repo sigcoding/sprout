@@ -1,10 +1,18 @@
 import React from "react";
-import { ParagraphProps } from "./Paragraph.types";
+import { ParagraphProps, LinkParagraphProps } from "./types";
+import { DefaultParagraph } from "./variations/default";
+import { LinkParagraph } from "./variations/link";
 
-const Paragraph: React.FC<ParagraphProps> = ({ as, text }) => {
-  const ParagraphType = as || "p";
+const Paragraph: React.FC = ({
+  as,
+  text,
+  href,
+}: ParagraphProps & LinkParagraphProps) => {
+  if (as !== "a") {
+    return <DefaultParagraph as={as} text={text} />;
+  }
 
-  return <ParagraphType className="p-2.5">{text}</ParagraphType>
-}
+  return <LinkParagraph href={href} text={text} />;
+};
 
 export default Paragraph;
