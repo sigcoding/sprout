@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import IconButton from "./IconButton";
 import { IconButtonProps } from "./types";
+import { HiHome, HiPlus, HiDownload } from "react-icons/hi";
 
 const meta = {
   title: "Forms/IconButton",
@@ -12,7 +13,16 @@ const meta = {
   args: {},
   argTypes: {
     icon: {
-      description: "IconButton background icon",
+      description: "IconButton icon",
+      options: ["Home", "Plus", "Download"],
+      control: {
+        type: "inline-radio",
+      },
+      mapping: {
+        Home: <HiHome />,
+        Plus: <HiPlus />,
+        Download: <HiDownload />,
+      },
     },
     backgroundColor: {
       type: "string",
@@ -35,4 +45,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {};
+export const Primary: Story = {
+  args: {
+    icon: "Home",
+  },
+};
