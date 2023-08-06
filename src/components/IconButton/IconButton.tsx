@@ -6,11 +6,13 @@ const IconButton: React.FC = ({
   backgroundColor = "bg-sig-primary",
   styles,
   icon,
+  ...props
 }: IconButtonProps) => {
   return (
     <button
       type={type}
       className={`p-2.5 rounded-lg ${backgroundColor} ${styles}`}
+      {...props}
     >
       {icon}
     </button>
