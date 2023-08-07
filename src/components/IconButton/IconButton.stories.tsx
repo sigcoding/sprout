@@ -10,7 +10,6 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  args: {},
   argTypes: {
     icon: {
       description: "IconButton icon",
@@ -47,6 +46,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    type: "button",
     icon: "Home",
   },
 };

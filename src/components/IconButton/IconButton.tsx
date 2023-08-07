@@ -3,7 +3,7 @@ import { IconButtonProps } from "./types";
 
 const IconButton: React.FC = ({
   type = "button",
-  backgroundColor = "bg-sig-primary",
+  backgroundColor = "#00FFC2",
   styles,
   icon,
   ...props
@@ -11,7 +11,7 @@ const IconButton: React.FC = ({
   return (
     <button
       type={type}
-      className={`p-2.5 rounded-lg ${backgroundColor} ${styles}`}
+      className={`p-2.5 rounded-lg bg-[${backgroundColor}] ${styles}`}
       {...props}
     >
       {icon}
