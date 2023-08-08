@@ -10,15 +10,15 @@ const meta = {
   },
   tags: ["autodocs"],
   args: {
-    direction: "horizontal",
+    direction: "vertical",
   },
   argTypes: {
     direction: {
       options: ["horizontal", "vertical"],
       control: {
-        type: "inline-radio"
-      }
-    }
+        type: "inline-radio",
+      },
+    },
   },
 } satisfies Meta<DividerProps>;
 
@@ -27,12 +27,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Horizontal: Story = {
   args: {
-    direction: "horizontal"
-  }
+    direction: "horizontal",
+  },
 };
 
 export const Vertical: Story = {
   args: {
-    direction: "vertical"
-  }
-}
+    direction: "vertical",
+  },
+};

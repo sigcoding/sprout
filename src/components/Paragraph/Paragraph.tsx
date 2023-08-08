@@ -1,7 +1,7 @@
 import React from "react";
-import { ParagraphProps, LinkParagraphProps } from "./types";
 import { DefaultParagraph } from "./variations/default";
 import { LinkParagraph } from "./variations/link";
+import { LinkParagraphProps, ParagraphProps } from "./types";
 
 const Paragraph: React.FC = ({
   as,
