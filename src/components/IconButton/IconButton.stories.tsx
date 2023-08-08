@@ -1,3 +1,4 @@
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import IconButton from "./IconButton";
 import { IconButtonProps } from "./types";
@@ -47,6 +48,6 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     type: "button",
-    icon: "Home",
+    icon: <HiHome />,
   },
 };
