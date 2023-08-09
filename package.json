@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/sigcoding/sprout.git"
   },
+  "type": "module",
   "author": "Sig Coding",
   "license": "LGPL-2.1",
   "main": "dist/cjs/index.js",
