@@ -54,5 +54,8 @@
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "dependencies": {
+    "react-icons": "^4.10.1"
+  }
 }
