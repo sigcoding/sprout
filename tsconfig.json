@@ -4,7 +4,7 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
-    "module": "ESNext",
+    "module": "CommonJS",
     "sourceMap": true,
     "outDir": "./dist",
     "moduleResolution": "node",
