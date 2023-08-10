@@ -1,26 +1,24 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Paragraph from "./Paragraph";
-import { LinkParagraphProps, ParagraphProps } from "./types";
+import SectionTitle from "./SectionTitle";
+import { SectionTitleProps } from "./types";
 
 const meta = {
-  title: "Typography/Paragraph",
-  component: Paragraph,
+  title: "Typography/SectionTitle",
+  component: SectionTitle,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   args: {
-    as: "h2",
+    size: "h4",
     text: "Sig Coding",
-    href: "https://sigcoding.com",
   },
   argTypes: {
-    as: {
+    size: {
       type: "string",
-      name: "As",
-      description:
-        "The HTML element that this component may be represented as.",
-      defaultValue: "h2",
+      name: "Size",
+      description: "Size of the component text",
+      defaultValue: "h4",
     },
     text: {
       type: "string",
@@ -31,12 +29,10 @@ const meta = {
     href: {
       type: "string",
       name: "Href",
-      description:
-        "In case of using an anchor element, specify the href of it.",
-      defaultValue: "https://sigcoding.com",
+      description: "Href of the anchor element ",
     },
   },
-} satisfies Meta<ParagraphProps & LinkParagraphProps>;
+} satisfies Meta<SectionTitleProps>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
