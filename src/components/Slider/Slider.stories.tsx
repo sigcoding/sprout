@@ -12,12 +12,15 @@ const meta = {
   argTypes: {
     defaultValue: {
       type: "number",
+      description: "Value that slider will start with",
     },
     max: {
       type: "number",
+      description: "Maximum value that slider component can reach and receive",
     },
     step: {
       type: "number",
+      description: "Steps in user drag",
     },
   },
   tags: ["autodocs"],
