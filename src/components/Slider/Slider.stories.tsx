@@ -10,7 +10,7 @@ const meta = {
     layout: "centered",
   },
   argTypes: {
-    min: {
+    defaultValue: {
       type: "number",
     },
     max: {
@@ -28,8 +28,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    defaultValue: [50],
-    min: 0,
+    defaultValue: 50,
     max: 100,
     step: 1,
   },
