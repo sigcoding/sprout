@@ -14,6 +14,7 @@ const meta = {
   },
   argTypes: {
     direction: {
+      description: "Divider direction, horizontal or vertical",
       options: ["horizontal", "vertical"],
       control: {
         type: "inline-radio",
