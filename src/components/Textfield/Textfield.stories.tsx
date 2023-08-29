@@ -34,7 +34,7 @@ const meta = {
     },
     rightIcon: {
       description: "Textfield right icon",
-      options: ["Home", "Plus", "Download"],
+      options: ["None", "Home", "Plus", "Download"],
       control: {
         type: "inline-radio",
       },
