@@ -17,6 +17,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        checkboxBackground: "#FFD050",
+        checkboxDisabledBackground: "#EDF2F7",
+        checkboxCheckedDisabledBackground: "#E2E8F0",
         inputContentColor: "#232536",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

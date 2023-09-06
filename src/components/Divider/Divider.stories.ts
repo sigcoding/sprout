@@ -3,7 +3,7 @@ import Divider from "./Divider";
 import { DividerProps } from "./types";
 
 const meta = {
-  title: "Divider",
+  title: "Layout/Divider",
   component: Divider,
   parameters: {
     layout: "centered",
